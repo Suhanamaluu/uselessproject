@@ -8,52 +8,52 @@
 
 
 ### Team Members
-- Team Lead: [Vivek] - [College of Engineering ]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Vivek] - [College of Engineering Perumon]
+- Member 2: [Safa Fathima] - [College of Engineering Perumon ]
+- Member 3: [Suhana SR] - [College of Engineering Perumon]
 
 ### Project Description
-[2-3 lines about what your project does]
+A randomly backward-traveling dynamic game similar to snake and ladder game where the dice might advance, retreat, or randomly summon by a North Korean dictator to stop your journey.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Ever felt that games are too linear and boring ? We’re tackling the "unintuitive progression" crisis by bringing total chaos to the classic board game experience.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Using a random backward dice roll, unexpected obstacles, intermittent Kim Jong-un "appearances" and some sound effect, we're solving non-problems with complex, interactive absurdity.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [Languages used : HTML,CSS,JavaScript]
+- [Frameworks : none]
+- [Libraries : Custom CSS and JavaScript functions]
+- [Tools used : vs code]
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+No physical hardware required.
 
 ### Implementation
-For Software:
+
 # Installation
-[commands]
+Download files and open index.html in a web browser.
 
 # Run
-[commands]
-
+Simply open in a browser, press "Roll Dice," and watch the unpredictable chaos unfold.
+                                                                                                                                                                                                                                                                                                               A
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](![SS1](https://github.com/user-attachments/assets/0a375a9e-e2ab-4801-a0be-c4cb3a1be2e4)
+*Starting point*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](![SS2](https://github.com/user-attachments/assets/cda88478-3572-4791-a02f-38ef9bc11495)
+  )
+*Middle part of a program when a special character appears*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3](![SS3](https://github.com/user-attachments/assets/d22189d8-21ae-43c7-acf8-f7bc0176f7c4)
+)
+*End of the game won*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -80,7 +80,9 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+ https://github.com/user-attachments/assets/72e87370-3a33-4fb4-a08c-ad92b0f8b7f9
+
+
 *Explain what the video demonstrates*
 
 # Additional Demos
