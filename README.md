@@ -87,9 +87,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Vivek]: [Javascript , full idea execution]
+- [Safa]: [html , css]
+- [Suhana.S.R]: [css , video editing]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
