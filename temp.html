@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake and Ladder Game</title>
+</head>
+<link rel="stylesheet" href="temp.css">
+<body id="body">
+
+    <div class="board1" id="board1"></div>
+    <div class="board2" id="board2"></div>
+    <div class="board3" id="board3"></div>
+    <div class="board4" id="board4"></div>
+    <div class="board5" id="board5"></div>
+    <div class="board6" id="board6"></div>
+    <div class="board7" id="board7"></div>
+    <div class="board8" id="board8"></div>
+    <div class="board9" id="board9"></div>
+    <div class="board10" id="board10"></div>
+    <div class="board11" id="board11"></div>
+    <div class="board12" id="board12"></div>
+    <div class="board13" id="board13"></div>
+    <div class="board14" id="board14"></div>
+    <div class="board15" id="board15"></div>
+    <div class="board16" id="board16"></div>
+    <div class="board17" id="board17"></div>
+    <div class="board18" id="board18"></div>
+    <div class="board19" id="board19"></div>
+    <div>
+        <button onclick="rollDice()">Roll Dice</button>
+        <p id="dice">Dice Rolled: -</p>
+    </div>
+
+    <script>
+        const boardSize = 100;
+        const board = document.getElementById('board');
+        let playerPosition = 100;
+
+        // Create the board
+        for (let i = boardSize; i > 92; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board1.appendChild(cell);
+        }
+        for (let i = 92; i > 90; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board2.appendChild(cell);
+        }
+        for (let i = 90; i > 86; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board3.appendChild(cell);
+        }
+        for (let i = 86; i > 84; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board4.appendChild(cell);
+        }
+        for (let i = 84; i > 82; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board5.appendChild(cell);
+        }
+        for (let i = 82; i > 78; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board6.appendChild(cell);
+        }
+        for (let i = 78; i > 69; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board7.appendChild(cell);
+        }
+        for (let i = 69; i > 63; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board8.appendChild(cell);
+        }
+        for (let i = 63; i > 60; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board9.appendChild(cell);
+        }
+        for (let i = 60; i > 58; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board10.appendChild(cell);
+        }
+        for (let i = 58; i > 56; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board11.appendChild(cell);
+        }
+        for (let i = 56; i > 54; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board12.appendChild(cell);
+        }
+        for (let i = 54; i > 52; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board13.appendChild(cell);
+        }
+        for (let i = 52; i > 48; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board14.appendChild(cell);
+        }
+        for (let i = 48; i > 43; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board15.appendChild(cell);
+        }
+        for (let i = 43; i > 41; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board16.appendChild(cell);
+        }
+        for (let i = 41; i > 34; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-' + i;
+            board17.appendChild(cell);
+        }
+        for (let i = 34; i > 26; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-'+ i;
+            board18.appendChild(cell);
+        }
+        for (let i = 26; i > 25; i--) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            cell.id = 'cell-'+ i;
+            board19.appendChild(cell);
+        }
+        
+
+        // Update player's position
+        function updatePosition() {
+            document.querySelectorAll('.cell').forEach(cell => cell.classList.remove('player'));
+            const cell = document.getElementById('cell-' + playerPosition);
+            cell.classList.add('player');
+            document.getElementById('dice').textContent = 'Player Position: ' + playerPosition;
+        }
+
+        // Roll the dice
+        function rollDice() {
+            const diceRoll = Math.floor(Math.random() * 6) + 1;
+            const random = Math.floor(Math.random()*4)+1;
+            document.getElementById('dice').textContent = 'Dice Rolled: ' + diceRoll;
+            if(random==1){
+                playerPosition += diceRoll;
+            }
+            else{
+                playerPosition -= diceRoll;
+            }
+
+            // Prevent going over board size
+            if (playerPosition < 26) {
+                playerPosition = 26;
+            }
+
+            if(playerPosition > 100){
+                playerPosition = 100;
+            }
+
+            updatePosition();
+
+            // Check for win
+            if (playerPosition == 26) {
+                const won = document.getElementById('body');
+                const wonvideo = document.createElement('video');
+                wonvideo.src = 'won.mp4';
+                wonvideo.controls = true;
+                won.appendChild(wonvideo);
+                wonvideo.autoplay = true;
+                wonvideo.classList.add('fullscreen-video');
+                alert('Game won');
+                resetGame();
+            }
+
+            //Check for loss
+            if(playerPosition == 100){
+                alert('Game lost');
+                resetGame();
+            }
+
+            //KIM JONG UN
+            if(playerPosition == 38){
+                const Kimaudio = document.getElementById('body');
+                const audio = document.createElement('audio');
+                audio.src = 'kimsong.mp3';
+                audio.controls = true;
+                Kimaudio.appendChild(audio);
+                audio.play();
+                setTimeout(() => {
+                    audio.pause();
+                    audio.currentTime = 0; // Optional: Reset to the beginning after pausing
+                }, 60000);
+                alert('Kim Jong UN arrested you');
+            }
+
+            //JOYBOY
+            if(playerPosition == 61){
+                alert('I hear the drums of liberation...')
+                const drumsof = document.getElementById('body');
+                const audioof = document.createElement('audio');
+                audioof.src = 'drumsofliberation.mp3';
+                audioof.controls = true;
+                drumsof.appendChild(audioof);
+                audioof.play();
+                setTimeout(() => {
+                    audioof.pause();
+                    audioof.currentTime = 0; // Optional: Reset to the beginning after pausing
+                }, 60000);
+            }
+        }
+
+        // Reset game
+        function resetGame() {
+            playerPosition = 100;
+            updatePosition();
+            document.getElementById('dice').textContent = 'Dice Rolled: -';
+        }
+
+        // Initialize game
+        updatePosition();
+    </script>
+
+</body>
+</html>

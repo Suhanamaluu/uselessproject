@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+body::before{
+    content: "";
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 140%;
+    width: 100%;
+    background: url('/useless1/temp.jpg') no-repeat center center;
+    z-index: -1;
+    background-size: cover;
+}
+.board1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    width: 520px;
+}
+.board2 {
+    display: grid;
+    grid-template-rows: repeat(10, 50px);
+    grid-gap: 19px;
+    margin-left: 450px;
+    width: 520px;
+}
+.board3 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -534px;
+    width: 520px;
+}
+.board4 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -139px;
+    margin-left: 172px;
+    width: 520px;
+}
+.board5 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -139px;
+    margin-left: -348px;
+    width: 520px;
+}
+.board6 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 33px;
+    width: 520px;
+}
+.board7 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -70px;
+    margin-left: 102px;
+    width: 651px;
+}
+.board8 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -486px;
+    margin-left: 659px;
+    width: 651px;
+}
+.board9 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -417.5px;
+    margin-left: 729px;
+    width: 651px;
+}
+.board10 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.5px;
+    margin-left: 868px;
+    width: 229px;
+}
+.board11 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -69.5px;
+    margin-left: 937px;
+    width: 209px;
+}
+.board12 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -207.5px;
+    margin-left: 1006.5px;
+    width: 182px;
+}
+.board13 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -139.5px;
+    margin-left: 1074.5px;
+    width: 205px;
+}
+.board14 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 1143.5px;
+    width: 89px;
+}
+.board15 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -69px;
+    margin-left: 493.5px;
+    width: 651px;
+}
+.board16 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3px;
+    margin-left: 797.5px;
+    width: 651px;
+}
+.board17 {
+    display: flex;
+    flex-direction: row;
+    margin-top: -3px;
+    margin-left: 797.5px;
+    width: 651px;
+}
+.board18 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -556.5px;
+    margin-left: 1284.5px;
+    width: 141px;
+}
+.board19 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -557.0px;
+    margin-left: 1353.5px;
+    width: 141px;
+}
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(85, 45, 0);
+    font-weight: bold;
+    color: white;
+    border: 5px solid green;
+}
+.player {
+    background-image: url('/useless1/player.png');
+    background-size: cover;
+    background-position: center;
+    color: red;
+    font-size: 1.2em;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 551px;
+    cursor: pointer;
+}
+p{
+    color: white;
+}
+.fullscreen-video {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensure the video covers the screen without distortion */
+    z-index: 1000; /* Make sure the video appears on top of other elements */
+    background-color: black; /* Fallback background color */
+}
