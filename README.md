@@ -48,11 +48,9 @@ For Software:
 *Starting point*
 
 ![Screenshot2](![SS2](https://github.com/user-attachments/assets/cda88478-3572-4791-a02f-38ef9bc11495)
-  )
 *Middle part of a program when a special character appears*
 
 ![Screenshot3](![SS3](https://github.com/user-attachments/assets/d22189d8-21ae-43c7-acf8-f7bc0176f7c4)
-)
 *End of the game won*
 
 # Diagrams
