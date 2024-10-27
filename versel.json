@@ -1,0 +1,36 @@
+{
+     "version": 2,
+  "builds": [
+      {
+        "src": "temp.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "temp.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "won.mp4",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "drums-of-liberation-ep-1070-joyboy-return-full-scene-onepiece-anime-aminedits-128-ytshorts-VEED.mp3",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "stick.jpg",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "back.jpg",
+        "use": "@vercel/static"
+      }
+  ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/temp.html"
+      }
+    ]
+  }
+  
